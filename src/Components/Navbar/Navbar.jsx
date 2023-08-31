@@ -1,8 +1,9 @@
 import { FaSearch } from "react-icons/fa";
+import logo from '/public/assets/img/logo.png'
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-green-100">
+        <div className="navbar bg-slate-50 border-b border-slate-200">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -20,7 +21,7 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="font-semibold text-xl text-red-500">AirBnb</a>
+                <a className="font-semibold text-xl text-red-500"><img src={logo} alt="" /></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="rounded-3xl border bg-slate-100 border-slate-300 p-2 flex items-center justify-center">
@@ -33,7 +34,7 @@ const Navbar = () => {
             <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                        <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <img src="https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1184" />
                     </div>
                 </label>
                 <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
