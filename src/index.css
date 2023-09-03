@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.myContainer{
+    @apply mx-6 md:mx-10
+}
