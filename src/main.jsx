@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import LayoutOne from './Layout/LayoutOne.jsx'
 import Homepage from './Components/Homepage/Homepage.jsx'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import DynamicPage from './Components/HelpingCompo/DynamicPage/DynamicPage'
 
 const queryClient = new QueryClient()
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Homepage></Homepage>
+      },
+      {
+        path: '/rooms/:id',
+        element: <DynamicPage></DynamicPage>
       },
     ]
   },

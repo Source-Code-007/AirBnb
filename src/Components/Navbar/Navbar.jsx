@@ -1,5 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 import logo from '/public/assets/img/logo.png'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -21,7 +22,7 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="font-semibold text-xl text-red-500"><img src={logo} alt="" /></a>
+                <Link className="font-bold text-xl flex text-red-500 items-center" to={'/'}><img src={logo} className="h-16 w-16" alt="" /> airbnb</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="rounded-3xl border bg-slate-100 border-slate-300 p-2 flex items-center justify-center">
