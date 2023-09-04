@@ -39,7 +39,7 @@ const Homepage = () => {
         <div className="py-12 myContainer">
             <Tabs>
                 <TabList className="flex gap-2 justify-between items-center flex-wrap mb-8">
-                    <div className="flex gap-2 justify-center flex-1">
+                    <div className="flex flex-wrap gap-2 justify-center flex-1">
                         {
                             categories?.map((category, ind) => {
                                 return <Tab key={ind} className={`px-4 py-2 ${activeCategory === category ? 'bg-[#a754f6]' : 'bg-slate-700'} font-bold text-slate-50 text-xl cursor-pointer rounded`} onClick={() => setActiveCategory(category)}>{category}</Tab>
@@ -56,7 +56,6 @@ const Homepage = () => {
                         return <TabPanel key={ind} className={'grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-5 md:gap-6 xl:gap-8'}>
                             {
                                 allData.filter(data => data.category === activeCategory).map((data, ind) => {
-                                    console.log(data);
                                     return <Cards key={ind} myData={data}></Cards>
 
                                 })

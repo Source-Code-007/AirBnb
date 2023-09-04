@@ -14,3 +14,42 @@
 .swiper-button-next::after, .swiper-button-prev::after{
     @apply bg-slate-200 !h-7 !w-9 font-bold text-[#a754f6] !text-[20px] flex items-center justify-center rounded-full
 }
+
+
+.my-btn-one{
+    @apply px-4 py-3 rounded font-semibold bg-black text-white
+}
+
+
+
+body{
+    --sb-track-color: #f9f9f9;
+    --sb-thumb-color: #121212;
+    --sb-size: 10px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color) !important; 
+}
+.modal-scrollbar {
+    --sb-track-color: #121212;
+    --sb-thumb-color: #f9f9f9;
+    --sb-size: 10px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color) !important;
+  }
+  
+  .modal-scrollbar::-webkit-scrollbar,body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  .modal-scrollbar::-webkit-scrollbar-track,body::-webkit-scrollbar-track {
+
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  .modal-scrollbar::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    }
