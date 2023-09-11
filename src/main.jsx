@@ -7,6 +7,7 @@ import Homepage from './Components/Homepage/Homepage.jsx'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import DynamicPage from './Components/HelpingCompo/DynamicPage/DynamicPage'
 
+
 const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
