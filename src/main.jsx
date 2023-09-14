@@ -9,6 +9,7 @@ import DynamicPage from './Components/HelpingCompo/DynamicPage/DynamicPage'
 
 const queryClient = new QueryClient()
 
+
 const router = createBrowserRouter([
   {
     path: '/',
